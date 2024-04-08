@@ -11,6 +11,14 @@
      - `npm install -D @playwright/test@latest`
      - download new browser binaries and their dependencies: `npx playwright install --with-deps`
 
+# Test Analysis and Design
+## Product Qty
+Apply Equivalence Partitions Test Design Technique
+| Partition 1 - Invalid | Partition 2 - Valid    | Partition 3 - Invalid    |
+| :-------------------: | :--------------------: | :----------------------: |
+| <1                    | 1-to-10000             | >10000                   |
+Apply Boundary Value Analysis
+
 # References
 - Playwright JavaScript: `https://playwright.dev/docs/writing-tests`
 - Test app: `https://magento.softwaretestingboard.com/radiant-tee.html`

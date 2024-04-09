@@ -1,3 +1,9 @@
+# Test Cases
+## Location
+- `e2e_tests`
+    - `order-placement.spec.ts`
+    - `product-page.spec.ts`
+
 # Running Tests
 - Run tests: `npx playwright test`
 - Run specific test: `npx playwright test landing-page.spec.ts`
@@ -14,13 +20,8 @@
 - Debugging Timeout: `await page.waitForTimeout(3000000);`
 
 # Test Analysis and Design
-## Product Qty
-Apply Equivalence Partitions Test Design Technique
-| Partition 1 - Invalid | Partition 2 - Valid    | Partition 3 - Invalid    |
-| :-------------------: | :--------------------: | :----------------------: |
-| <1                    | 1-to-10000             | >10000                   |
-
-Apply Boundary Value Analysis
+- Product Page Test Analysis and Design: `test_design/PRODUCT-PAGE.md`
+- Shipping Page Test Analysis and Design: `test_design/SHIPPING-PAGE.md`
 
 # Reporting
 The Artifacts section of a job contains contains a downloadable artifact called `playwright-report`

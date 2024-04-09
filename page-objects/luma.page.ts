@@ -16,7 +16,8 @@ export class LumaPage {
     }
 
     public async useDataConsent() {
-        await this.page.getByLabel('Consent', { exact: true }).click();
+        //const consent = await this.page.getByLabel('Consent', { exact: true });
+        //await this.click(consent);
     }
 
     public async click(element: Locator) {

@@ -15,6 +15,11 @@ export class LumaPage {
         await this.page.goto(url);
     }
 
+    /**
+     * It seems 'Consent' dialog does not appear consistently every time.
+     * For example, in the pipeline the test fails with a timeout waiting for the dialog.
+     * A flexible mechanism has to be implemented here to deal with this behaviour.
+    */
     public async useDataConsent() {
         //const consent = await this.page.getByLabel('Consent', { exact: true });
         //await this.click(consent);

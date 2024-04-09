@@ -51,3 +51,4 @@ or being forced to do a major refactoring.
 # References
 - Playwright JavaScript: `https://playwright.dev/docs/writing-tests`
 - Test app: `https://magento.softwaretestingboard.com/radiant-tee.html`
+- ReportPortal Playwright integration: `https://github.com/reportportal/agent-js-playwright#readme`

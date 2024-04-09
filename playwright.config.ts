@@ -9,7 +9,7 @@ import { defineConfig, devices } from '@playwright/test';
 const RPconfig = {
   apiKey: 'playwright-poc_ZqeuC6coTCOEQHAp5TrrnM_ZoxhpDxEaFEueaSJ4EcHPyyNjY1wO0UIa17mmubaV',
   endpoint: 'https://demo.reportportal.io/api/v1',
-  project: 'Playwright POC',
+  project: 'default_personal',
   launch: 'eCommerce',
   attributes: [
     {

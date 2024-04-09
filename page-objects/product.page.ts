@@ -50,6 +50,15 @@ export class ProductPage extends LumaPage {
         console.log('colorLabel: ' + value);
     }
 
+    public async setQuantity(quantity: number) {
+        await this.page.locator('input[name="qty"]').fill(quantity.toString());
+    }
+
+    public async checkQuantityErrorMessage(errorMessage: string) {
+        const error = await this.page.getByText(errorMessage);
+        await expect(error).toBeVisible();
+    }
+
     /**
      * Click 'Add to Cart' button.
     */

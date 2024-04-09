@@ -6,6 +6,20 @@ import { defineConfig, devices } from '@playwright/test';
  */
 // require('dotenv').config();
 
+const RPconfig = {
+  apiKey: 'playwright-poc_ZqeuC6coTCOEQHAp5TrrnM_ZoxhpDxEaFEueaSJ4EcHPyyNjY1wO0UIa17mmubaV',
+  endpoint: 'https://demo.reportportal.io/api/v1',
+  project: 'Playwright POC',
+  launch: 'eCommerce',
+  attributes: [
+    {
+      key: 'test_level',
+      value: 'system e2e',
+    }
+  ],
+  description: 'Playwright POC',
+};
+
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
@@ -24,7 +38,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [['html'], ['@reportportal/agent-js-playwright', RPconfig]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */

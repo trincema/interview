@@ -21,11 +21,11 @@ In Boundary Value Analysis you will check 0, 1, 10000, 10001.
 | 0                     | 1, 10000               | 10001                    |
 
 ## Product Settings (Size, Color, Qty)
-Test Design Techniques used: Decision Table based on Equivalence Partitioning and Boundary Value Analysis performed in the previous step.
-Size: XS, S, M, L, XL
-Color: Blue, Orange, Purple
-Qty: 0, 1, 10000, 10001
-In total we have 5x4x3=60 combinations
+Test Design Techniques used: Decision Table based on Equivalence Partitioning and Boundary Value Analysis performed in the previous step.<br/>
+Size: XS, S, M, L, XL<br/>
+Color: Blue, Orange, Purple<br/>
+Qty: 0, 1, 10000, 10001<br/>
+In total we have 5x4x3=60 combinations<br/>
 | #    | Size    | Color    | Qty     | Decision                                             |
 | :--: |:------: | :------: | :-----: | :--------------------------------------------------: |
 | 1    | XS      | Blue     | 0       | Error: "Please enter a quantity greater than 0."     |

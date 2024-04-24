@@ -32,3 +32,5 @@ In total we have 5x4x3=60 combinations<br/>
 | 2    | XS      | Blue     | 1       | Product added to Cart                                |
 | 3    | XS      | Blue     | 10000   | Product added to Cart                                |
 | 4    | XS      | Blue     | 10001   | Error: "The maximum you may purchase is 10000."      |
+| ...  | ...     | ...      | ...     | ...                                                  |
+| 60   | XL      | Purple   | 10001   | Error: "The maximum you may purchase is 10000."      |

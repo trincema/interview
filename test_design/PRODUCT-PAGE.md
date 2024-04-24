@@ -21,6 +21,7 @@ In Boundary Value Analysis you will check 0, 1, 10000, 10001.
 | 0                     | 1, 10000               | 10001                    |
 
 ## Product Settings (Size, Color, Qty)
+### Decision Table
 Test Design Techniques used: Decision Table based on Equivalence Partitioning and Boundary Value Analysis performed in the previous step.<br/>
 Size: XS, S, M, L, XL<br/>
 Color: Blue, Orange, Purple<br/>
@@ -34,3 +35,11 @@ In total we have 5x4x3=60 combinations<br/>
 | 4    | XS      | Blue     | 10001   | Error: "The maximum you may purchase is 10000."      |
 | ...  | ...     | ...      | ...     | ...                                                  |
 | 60   | XL      | Purple   | 10001   | Error: "The maximum you may purchase is 10000."      |
+
+However, according to ISTQB CTAL-TA, we should only multiply the biggest first 2 number of combinations, in this case Size and Quantity, and the 3rd setting which is Color, should be spread across other combinations.<br/>
+Combinations: 5x4=20 combinations.
+| #    | Size    | Qty      | Color     | Decision                                            |
+| :--: |:------: | :------: | :-----:   | :-------------------------------------------------: |
+| 1    | XS      | 0        | Blue      | Error: "Please enter a quantity greater than 0."    |
+| ...  | ...     | ...      | ...       | ...                                                 |
+| 20   | XL      | 10001    | Blue      | Error: "Please enter a quantity greater than 0."    |

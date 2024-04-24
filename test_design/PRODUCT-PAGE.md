@@ -41,5 +41,8 @@ Combinations: 5x4=20 combinations.<br/>
 | #    | Size    | Qty      | Color     | Decision                                            |
 | :--: |:------: | :------: | :-----:   | :-------------------------------------------------: |
 | 1    | XS      | 0        | Blue      | Error: "Please enter a quantity greater than 0."    |
+| 1    | XS      | 1        | Orange    | Product added to Cart                               |
+| 1    | XS      | 10000    | Purple    | Product added to Cart                               |
+| 1    | XS      | 10001    | Blue      | Error: "Please enter a quantity greater than 10000."|
 | ...  | ...     | ...      | ...       | ...                                                 |
-| 20   | XL      | 10001    | Blue      | Error: "Please enter a quantity greater than 0."    |
+| 20   | XL      | 10001    | Orange    | Error: "Please enter a quantity greater than 0."    |

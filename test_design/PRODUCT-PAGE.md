@@ -1,4 +1,6 @@
 # Test Analysis and Design
+## Test Web Page
+URL: https://magento.softwaretestingboard.com/radiant-tee.html
 ## Product Qty
 Apply Equivalence Partitions Test Design Technique
 | Partition 1 - Invalid | Partition 2 - Valid    | Partition 3 - Invalid    |
@@ -19,4 +21,14 @@ In Boundary Value Analysis you will check 0, 1, 10000, 10001.
 | 0                     | 1, 10000               | 10001                    |
 
 ## Product Settings (Size, Color, Qty)
-Pairwise Testing.
+Test Design Techniques used: Decision Table based on Equivalence Partitioning and Boundary Value Analysis performed in the previous step.
+Size: XS, S, M, L, XL
+Color: Blue, Orange, Purple
+Qty: 0, 1, 10000, 10001
+In total we have 5x4x3=60 combinations
+| #    | Size    | Color    | Qty     | Decision                                             |
+| :--: |:------: | :------: | :-----: | :--------------------------------------------------: |
+| 1    | XS      | Blue     | 0       | Error: "Please enter a quantity greater than 0."     |
+| 2    | XS      | Blue     | 1       | Product added to Cart                                |
+| 3    | XS      | Blue     | 10000   | Product added to Cart                                |
+| 4    | XS      | Blue     | 10001   | Error: "The maximum you may purchase is 10000."      |
